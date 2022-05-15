@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>grid_layout</title>
+<style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+h1{
+  background-color: rgb(225, 244, 213);
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+h2 {
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 10px;
+  text-align: right;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+  .grid-container {
+    display:grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color:#2196F3;
+    padding: 10px;
+  }
+  .grid-container > div {
+    Background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding:20px 0;
+    font-size:30px;
+  }
+
+  
+  @media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+
+  }
+
+  
+  
+    </style>
+</head>
+<body>
+
+<h2></h2>
+<p></p>
+
+<header>
+  <h1> <img src="img/plantshot_logo.png" alt="logo" style=" width: 350px;" class="left text-align"></h1>
+</header>
+ 
+<h2>  Home | Reminders | Saved | Plants Found Near You | Contact | Search</h2>
+
+<p><a href="page_2.html">Saved</a></p>
+<p><a href="Page_3.html">Reminders</a></p>
+</body>
+<img src="img/topic4.png" alt="logo" style=" width: 1000px;" class="centered"></h2>
+<section>
+  <nav>
+    <h1> 
+    <header> Reminders</header>
+  </h1>  
+    <ul>
+      <li>Water imdoor flowers everyday at 2pm </li>
+      <li>Mist suculent on friday every other week</li>
+      <li>Water outdoor plants on tuesday once a week</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Plants Found Near You</h1>
+    <h2> <img src="img/plantmap.png" alt="logo" style=" width: 350px;" class="left text-align"></h2> <h2> New plants people around you have found</h2>
+  </article>
+</section>
+
+
+
+<footer>
+  <h1>
+  Download the app for free!
+</h1>
+</footer>
+
+</body>
+</html>
+
